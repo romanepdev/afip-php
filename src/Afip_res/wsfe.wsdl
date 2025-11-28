@@ -71,6 +71,7 @@
           <s:element minOccurs="0" maxOccurs="1" name="Opcionales" type="tns:ArrayOfOpcional"/>
           <s:element minOccurs="0" maxOccurs="1" name="Compradores" type="tns:ArrayOfComprador"/>
           <s:element minOccurs="0" maxOccurs="1" name="PeriodoAsoc" type="tns:Periodo"/>
+          <s:element minOccurs="1" maxOccurs="1" name="CondicionIVAReceptorId" type="s:string"/>
         </s:sequence>
       </s:complexType>
       <s:complexType name="ArrayOfCbteAsoc">
