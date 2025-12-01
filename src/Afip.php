@@ -338,21 +338,21 @@ class Afip {
 				)
 			);
 
-			$request = Requests::post('https://app.afipsdk.com/api/v1/sdk-events', $headers, $data);
+			// $request = Requests::post('https://app.afipsdk.com/api/v1/sdk-events', $headers, $data);
 
-			if (!$request->success) {
-				$error_message = $request->body;
+			// if (!$request->success) {
+			// 	$error_message = $request->body;
 
-				try {
-					$json_res = json_decode($request->body);
+			// 	try {
+			// 		$json_res = json_decode($request->body);
 
-					if (isset($json_res->message)) {
-						$error_message = $json_res->message;
-					}
-				} catch (Exception $e) {}
+			// 		if (isset($json_res->message)) {
+			// 			$error_message = $json_res->message;
+			// 		}
+			// 	} catch (Exception $e) {}
 
-				throw new Exception($error_message);
-			}
+			// 	throw new Exception($error_message);
+			// }
 		}
 	}
 
